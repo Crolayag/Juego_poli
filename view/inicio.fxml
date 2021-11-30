@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="501.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.InicioController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="584.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/MODO.PNG" />
+         </image>
+      </ImageView>
+      <Label layoutX="121.0" layoutY="105.0" text="JUGANDO CON NUMEROS" textFill="#4a9e29">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font></Label>
+      <Button fx:id="BtonIniciar" layoutX="216.0" layoutY="169.0" mnemonicParsing="false" onAction="#iniciar" style="-fx-background-color: red;" text="INICIAR" textFill="#ebe3e3">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

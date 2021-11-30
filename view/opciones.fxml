@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.OpcionesController">
+   <children>
+      <ImageView fitHeight="461.0" fitWidth="655.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/MODO.PNG" />
+         </image>
+      </ImageView>
+      <Button fx:id="BotnSuma" layoutX="71.0" layoutY="137.0" mnemonicParsing="false" onAction="#click_suma" style="-fx-background-color: purple;" text="SUMA">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font></Button>
+      <Button fx:id="BotnResta" layoutX="166.0" layoutY="137.0" mnemonicParsing="false" onAction="#clickResta" style="-fx-background-color: yellow;" text="RESTA" textFill="#070606">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font></Button>
+      <Button fx:id="BotnMultiplicacion" layoutX="257.0" layoutY="137.0" mnemonicParsing="false" onAction="#clickMultiplicacion" style="-fx-background-color: red;" text="MULTIPLICACION">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font></Button>
+      <Button fx:id="BotnDivision" layoutX="430.0" layoutY="137.0" mnemonicParsing="false" onAction="#clickDivision" style="-fx-background-color: green;" text="DIVISION">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font></Button>
+      <Label layoutX="104.0" layoutY="231.0" text="ELIGE TU MODO DE JUEGO FAVORITO" textFill="#239e48">
+         <font>
+            <Font name="Britannic Bold" size="24.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

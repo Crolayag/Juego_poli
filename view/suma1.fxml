@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Suma1Controller">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" layoutX="12.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/TAB.PNG" />
+         </image>
+      </ImageView>
+      <Label layoutX="98.0" layoutY="44.0" prefHeight="43.0" prefWidth="445.0" text="REALIZA LA SIGUIENTE SUMA" textFill="#ffd607">
+         <font>
+            <Font name="Britannic Bold" size="33.0" />
+         </font>
+      </Label>
+      <Label layoutX="298.0" layoutY="118.0" text="OPCIONES" textFill="#e2ff09">
+         <font>
+            <Font name="Britannic Bold" size="24.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="rdbOpcion2" layoutX="326.0" layoutY="184.0" mnemonicParsing="false" text="20" textFill="RED">
+         <toggleGroup>
+            <ToggleGroup fx:id="Opciones" />
+         </toggleGroup>
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rdbOpcion1" layoutX="326.0" layoutY="148.0" mnemonicParsing="false" text="50" textFill="RED" toggleGroup="$Opciones">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rdbOpcion3" layoutX="326.0" layoutY="220.0" mnemonicParsing="false" text="100" textFill="RED" toggleGroup="$Opciones">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </RadioButton>
+      <Button fx:id="BtnGuardar" layoutX="311.0" layoutY="259.0" mnemonicParsing="false" onAction="#siguiente" text="SIGUIENTE" />
+      <ImageView fx:id="imagNumeros" fitHeight="130.0" fitWidth="159.0" layoutX="98.0" layoutY="142.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/suma1.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

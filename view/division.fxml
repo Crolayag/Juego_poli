@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DivisionController">
+   <children>
+      <ImageView fitHeight="401.0" fitWidth="600.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/TAB.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imageDivision" fitHeight="150.0" fitWidth="200.0" layoutX="43.0" layoutY="134.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/division1.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="66.0" layoutY="59.0" prefHeight="43.0" prefWidth="484.0" text="REALIZA LA SIGUIENTE  DIVISION" textFill="#ffd607">
+         <font>
+            <Font name="Britannic Bold" size="33.0" />
+         </font>
+      </Label>
+      <Label layoutX="325.0" layoutY="134.0" text="OPCIONES" textFill="#e2ff09">
+         <font>
+            <Font name="Britannic Bold" size="24.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="rdbOpcion1" layoutX="361.0" layoutY="169.0" mnemonicParsing="false" text="24" textFill="RED">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="Opciones" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rdbOpcion2" layoutX="361.0" layoutY="212.0" mnemonicParsing="false" text="35" textFill="RED" toggleGroup="$Opciones">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rdbOpcion3" layoutX="361.0" layoutY="252.0" mnemonicParsing="false" text="30" textFill="RED" toggleGroup="$Opciones">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </RadioButton>
+      <Button fx:id="BtnGuardar" layoutX="350.0" layoutY="297.0" mnemonicParsing="false" onAction="#siguiente" text="SIGUIENTE" />
+   </children>
+</AnchorPane>
